@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon src/index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "nodemailer": "6.4.10"
+  },
   "devDependencies": {
     "nodemon": "1.18.4"
   },

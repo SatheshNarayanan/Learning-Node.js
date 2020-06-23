@@ -1,6 +1,6 @@
 var fs = require("fs");
 
-exports.files = () => {
+async function files() {
   //Read data from a file
   fs.readFile("src/module.js", function(err, data) {
     if (err) {
@@ -49,4 +49,6 @@ exports.files = () => {
     }
     console.log("File deleted!");
   });
-};
+}
+
+module.exports = files;
